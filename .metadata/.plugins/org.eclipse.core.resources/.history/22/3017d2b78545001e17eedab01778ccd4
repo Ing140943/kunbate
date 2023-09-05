@@ -1,0 +1,5 @@
+package com.setthanat.learnspringframework.game;
+
+public interface GamingConsole {
+
+}

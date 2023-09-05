@@ -1,0 +1,13 @@
+package myexercise;
+
+import java.util.Arrays;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class BusinessCalculationService {
+
+	public int findMax() {
+		return Arrays.stream(dataService.retrieveData());
+	}
+}

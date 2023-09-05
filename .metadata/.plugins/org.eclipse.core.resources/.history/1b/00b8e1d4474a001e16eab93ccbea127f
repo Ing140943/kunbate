@@ -1,0 +1,5 @@
+package myexercise;
+
+public interface DataService {
+
+}

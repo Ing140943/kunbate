@@ -1,0 +1,8 @@
+package myexercise;
+
+public class BusinessCalculationApplication {
+
+	public void main(String[] args) {
+		
+	}
+}

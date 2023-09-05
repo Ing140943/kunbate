@@ -1,0 +1,13 @@
+package myexercise;
+
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+@ComponentScan
+public class BusinessCalculationApplication {
+
+	public void main(String[] args) {
+		
+	}
+}

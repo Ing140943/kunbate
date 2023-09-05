@@ -1,0 +1,42 @@
+package com.setthanat.learnspringframework;
+
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
+import com.setthanat.learnspringframework.game.GameRunner;
+import com.setthanat.learnspringframework.game.GamingConsole;
+
+@Configuration
+@ComponentScan("com.setthanat.learnspringframework.game")
+public class App03GamingSpringBeans {
+	
+//	@Bean
+//	public GamingConsole game() {
+//		var game = new PacmanGame();
+//		return game;
+//	}
+	
+	@Bean
+	public GameRunner gameRunner(GamingConsole game) { // same parameter will wiring from the game bean
+		System.out.println(""+game);
+		var gameRunner = new GameRunner(game);
+		return gameRunner;
+	}
+
+	/*
+	 * Coupling is how much work is involved in changing something. Tight coupling:
+	 * Car and engine Loose coupling: Car and wheels
+	 */
+	public static void main(String[] args) {
+
+		try (var context = new AnnotationConfigApplicationContext(App03GamingSpringBeans.class)) {
+			context.getBean(GamingConsole.class).up();
+			context.getBean(GameRunner.class).run();
+		};
+
+	}
+
+}

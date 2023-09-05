@@ -1,0 +1,8 @@
+package myexercise;
+
+public class MongoDbDataService implements DataService {
+
+	public int[] retrieceData() {
+		
+	}
+}

@@ -1,0 +1,16 @@
+package com.setthanat.learnspringframework.examples.c1;
+
+import java.util.Arrays;
+
+public class BusinessCalculationService {
+
+	DataService dataService;
+	
+	public BusinessCalculationService {
+		
+	}
+
+	public int findMax() {
+		return Arrays.stream(dataService.retrieveData()).max().orElse(0);
+	}
+}

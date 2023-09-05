@@ -1,0 +1,8 @@
+package com.setthanat.learnspringframework;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class GamingConfiguration {
+
+}

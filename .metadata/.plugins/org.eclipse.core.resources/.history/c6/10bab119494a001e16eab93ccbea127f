@@ -1,0 +1,11 @@
+package myexercise;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class BusinessCalculationApplication {
+
+	public void main(String[] args) {
+		
+	}
+}
